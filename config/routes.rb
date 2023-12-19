@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :categories
   resources :companies
   # devise_for :users
   devise_for :users, path: 'api/auth', path_names: {
