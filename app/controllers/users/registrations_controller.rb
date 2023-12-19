@@ -60,6 +60,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super(resource)
   # end
   # 
+  include RackSessionFix
+  #
   respond_to :json
   private
 
