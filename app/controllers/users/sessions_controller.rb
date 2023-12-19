@@ -25,6 +25,9 @@ class Users::SessionsController < Devise::SessionsController
   #   devise_parameter_sanitizer.permit(:sign_in, keys: [:attribute])
   # end
   # 
+  include RackSessionFix
+
+
   respond_to :json
   private
 
